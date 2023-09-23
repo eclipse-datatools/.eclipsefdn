@@ -29,11 +29,15 @@ orgs.newOrg('eclipse-datatools') {
   ],
   _repositories+:: [
     orgs.newRepo('.github') {
+      allow_merge_commit: true,
       allow_update_branch: false,
+      delete_branch_on_merge: false,
       web_commit_signoff_required: false,
     },
     orgs.newRepo('datatools') {
+      allow_merge_commit: true,
       default_branch: "master",
+      delete_branch_on_merge: false,
       has_discussions: true,
       web_commit_signoff_required: false,
     },
