@@ -4,6 +4,9 @@ strict: false
 
 site_url: https://eclipse-datatools.github.io/.eclipsefdn/
 
+repo_name: eclipse-datatools/.eclipsefdn
+repo_url: https://github.com/eclipse-datatools/.eclipsefdn/
+
 docs_dir: ./docs
 site_dir: ./_site
 
