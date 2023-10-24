@@ -3,7 +3,6 @@ local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 orgs.newOrg('eclipse-datatools') {
   settings+: {
     blog: "https://projects.eclipse.org/projects/tools.datatools",
-    default_repository_permission: "none",
     dependabot_security_updates_enabled_for_new_repositories: false,
     description: "Provides extensible frameworks and exemplary tools focused on data-centric technologies.",
     email: "dtp-dev@eclipse.org",
@@ -33,6 +32,9 @@ orgs.newOrg('eclipse-datatools') {
       allow_update_branch: false,
       delete_branch_on_merge: false,
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+      },
     },
     orgs.newRepo('datatools') {
       allow_merge_commit: true,
@@ -40,6 +42,9 @@ orgs.newOrg('eclipse-datatools') {
       delete_branch_on_merge: false,
       has_discussions: true,
       web_commit_signoff_required: false,
+      workflows+: {
+        enabled: false,
+      },
     },
   ],
 }
