@@ -6,7 +6,6 @@ orgs.newOrg('eclipse-datatools') {
     dependabot_security_updates_enabled_for_new_repositories: false,
     description: "Provides extensible frameworks and exemplary tools focused on data-centric technologies.",
     email: "dtp-dev@eclipse.org",
-    members_can_change_project_visibility: false,
     name: "Eclipse Data Tools Platform",
     packages_containers_internal: false,
     packages_containers_public: false,
