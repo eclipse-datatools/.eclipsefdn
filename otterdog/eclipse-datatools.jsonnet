@@ -28,9 +28,6 @@ orgs.newOrg('eclipse-datatools') {
       allow_update_branch: false,
       delete_branch_on_merge: false,
       web_commit_signoff_required: false,
-      workflows+: {
-        actions_can_approve_pull_request_reviews: false,
-      },
     },
     orgs.newRepo('datatools') {
       allow_merge_commit: true,
