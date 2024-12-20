@@ -1,6 +1,6 @@
 local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
-orgs.newOrg('eclipse-datatools') {
+orgs.newOrg('tools.datatools', 'eclipse-datatools') {
   settings+: {
     blog: "https://projects.eclipse.org/projects/tools.datatools",
     description: "Provides extensible frameworks and exemplary tools focused on data-centric technologies.",
